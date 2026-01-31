@@ -7,6 +7,7 @@ const root = path.resolve(__dirname, '..');
 module.exports = function (api) {
   api.cache(true);
 
+  // Just use the default config - builder-bob should handle plugins automatically
   return getConfig(
     {
       presets: ['babel-preset-expo'],

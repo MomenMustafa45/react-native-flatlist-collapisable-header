@@ -1,0 +1,13 @@
+# .npmignore
+
+example/
+**tests**/
+coverage/
+node_modules/
+_.log
+_.tsbuildinfo
+.eslintrc.js
+.prettierrc.js
+.gitignore
+README-example.md
+tsconfig.json
