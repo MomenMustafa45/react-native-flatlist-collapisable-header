@@ -23,7 +23,7 @@ Ideal for feeds, profile screens, dashboards, and modern mobile UIs.
 Demo of the collapsible header behavior:
 
 ```md
-https://github.com/your-username/react-native-flatlist-collapsible-header/assets/demo.mp4
+https://www.youtube.com/watch?v=Jq4Im-_T3uk
 ```
 
 ## 📥 Installation
