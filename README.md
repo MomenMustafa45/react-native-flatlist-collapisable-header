@@ -26,6 +26,8 @@ Demo of the collapsible header behavior:
 [Watch Demo on YouTube](https://external.ink?to=/www.youtube.com/watch?v=Jq4Im-_T3uk)
 ```
 
+Check out my github profile [here](https://github.com/theisraelolaleye).
+
 ## 📥 Installation
 
 Using npm:
