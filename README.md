@@ -23,7 +23,7 @@ Ideal for feeds, profile screens, dashboards, and modern mobile UIs.
 Demo of the collapsible header behavior:
 
 ```md
-<a href="https://www.youtube.com/watch?v=Jq4Im-_T3uk" target="_blank">Watch Demo on YouTube</a>
+[Watch Demo on YouTube](external.ink?to=/www.youtube.com/watch?v=Jq4Im-_T3uk)
 ```
 
 ## 📥 Installation
