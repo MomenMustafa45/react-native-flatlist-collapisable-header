@@ -22,11 +22,7 @@ Ideal for feeds, profile screens, dashboards, and modern mobile UIs.
 
 Demo of the collapsible header behavior:
 
-```md
 [Watch Demo on YouTube](https://external.ink?to=/www.youtube.com/watch?v=Jq4Im-_T3uk)
-```
-
-Check out my github profile [here](https://github.com/theisraelolaleye).
 
 ## 📥 Installation
 
