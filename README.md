@@ -23,7 +23,7 @@ Ideal for feeds, profile screens, dashboards, and modern mobile UIs.
 Demo of the collapsible header behavior:
 
 ```md
-https://www.youtube.com/watch?v=Jq4Im-_T3uk
+[Watch Demo on YouTube](https://www.youtube.com/watch?v=Jq4Im-_T3uk)
 ```
 
 ## 📥 Installation
