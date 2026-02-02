@@ -20,7 +20,7 @@ export type AnimatedHeaderFlatListProps<T> = FlatListProps<T> & {
   /** Height of the header in pixels */
   headerHeight: number;
   /** Function that renders the header component */
-  renderHeader: React.ReactNode;
+  renderHeader: () => React.ReactNode; // Changed from React.ReactNode to () => React.ReactNode
   /** Additional styles for the header container */
   headerContainerStyle?: ViewStyle;
   /** Additional styles for the content container */
@@ -115,7 +115,7 @@ export function AnimatedHeaderFlatList<T>({
         ]}
         pointerEvents="box-none"
       >
-        {renderHeader}
+        {renderHeader()}
       </Animated.View>
 
       <FlatList<T>
@@ -140,5 +140,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
     left: 0,
+    zIndex: 9999999,
   },
 });
