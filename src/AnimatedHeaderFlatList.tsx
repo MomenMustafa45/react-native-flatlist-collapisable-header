@@ -51,11 +51,7 @@ export function AnimatedHeaderFlatList<T>({
   headerContainerStyle,
   hideThreshold = 0.5,
   scrollEventThrottle = 16,
-  animationConfig = {
-    fadeOut: true,
-    translate: true,
-    scale: false,
-  },
+  animationConfig: userAnimationConfig = {},
   ...props
 }: AnimatedHeaderFlatListProps<T>) {
   const scrollY = useSharedValue(0);
@@ -69,6 +65,14 @@ export function AnimatedHeaderFlatList<T>({
     if (onScroll) {
       onScroll(event);
     }
+  };
+
+  // Merge user config with defaults
+  const animationConfig = {
+    fadeOut: true,
+    translate: true,
+    scale: false,
+    ...userAnimationConfig,
   };
 
   const headerContainerStyles = useAnimatedStyle(() => {
