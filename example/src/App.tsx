@@ -24,7 +24,7 @@ const App = () => {
       <AnimatedHeaderFlatList
         data={dummyData}
         headerHeight={400}
-        renderHeader={<ListHeader />}
+        renderHeader={() => <ListHeader />}
         renderItem={renderItem}
         keyExtractor={keyExtractor}
         style={styles.listStyles}
