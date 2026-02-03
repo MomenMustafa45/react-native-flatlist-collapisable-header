@@ -51,7 +51,7 @@ import { AnimatedHeaderFlatList } from 'react-native-flatlist-collapsible-header
 <AnimatedHeaderFlatList
   data={data}
   headerHeight={400}
-  renderHeader={<ListHeader />}
+  renderHeader={() => <ListHeader />}
   renderItem={({ item }) => <ListItem item={item} />}
   keyExtractor={(item) => item.id}
 />;
