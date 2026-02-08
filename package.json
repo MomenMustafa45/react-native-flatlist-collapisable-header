@@ -1,6 +1,6 @@
 {
   "name": "react-native-flatlist-collapsible-header",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A React Native FlatList with collapsible header that smoothly disappears on scroll",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
