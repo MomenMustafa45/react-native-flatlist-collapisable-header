@@ -23,6 +23,7 @@ export type AnimatedHeaderFlatListProps<T> = FlatListProps<T> & {
   renderHeader: () => React.ReactNode; // Changed from React.ReactNode to () => React.ReactNode
   /** Additional styles for the header container */
   headerContainerStyle?: ViewStyle;
+  customListParentStyles?: ViewStyle;
   /** Additional styles for the content container */
   contentContainerStyle?: StyleProp<ViewStyle>;
   /** Threshold for hiding the header (0 to 1) relative to headerHeight */
@@ -51,6 +52,7 @@ export function AnimatedHeaderFlatList<T>({
   headerContainerStyle,
   hideThreshold = 0.5,
   scrollEventThrottle = 16,
+  customListParentStyles,
   animationConfig: userAnimationConfig = {},
   ...props
 }: AnimatedHeaderFlatListProps<T>) {
@@ -109,7 +111,7 @@ export function AnimatedHeaderFlatList<T>({
   });
 
   return (
-    <View style={styles.listContainer}>
+    <View style={[styles.listContainer, customListParentStyles]}>
       <Animated.View
         style={[
           styles.headerViewContainer,
@@ -136,7 +138,7 @@ export function AnimatedHeaderFlatList<T>({
 }
 
 const styles = StyleSheet.create({
-  listContainer: { position: 'relative' },
+  listContainer: { position: 'relative', flex: 1 },
   headerViewContainer: {
     backgroundColor: 'transparent',
     width: '100%',
