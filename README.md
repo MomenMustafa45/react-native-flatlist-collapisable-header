@@ -92,7 +92,7 @@ Contributions are welcome!
 ```tsx
 <AnimatedHeaderFlatList
   headerHeight={300}
-  renderHeader={<Header />}
+  renderHeader={() => <Header />}
   animationConfig={{
     fadeOut: true,
     translate: true,
