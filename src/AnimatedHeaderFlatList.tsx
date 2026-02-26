@@ -132,6 +132,7 @@ export function AnimatedHeaderFlatList<T>({
           { paddingTop: headerHeight },
           contentContainerStyle,
         ]}
+        progressViewOffset={headerHeight}
       />
     </View>
   );
